@@ -1,0 +1,50 @@
+why do we need Docker?
+
+Compatibility/dependency
+long setup time
+different envi dev/test/prod
+new devloper find difficult to setup
+
+using docker run component in a separate container with own dependencies
+and its own libraires.
+
+what can it do?
+
+containerize application
+run each service with its own dependencies in separate containers.
+
+it shares common os kernel
+differnet types of container LXC,LXD,LXCFS.
+DOCKER USE LXC.
+
+it shares commmon kernel not able to run in windows kernel but can run as linux container package.
+
+the main purpose of docker is to package and conrainerized applications and to ship them and to run.
+
+virtual vs container
+
+Virtualization enables you to run multiple operating systems on the hardware of a single physical server, 
+while containerization enables you to deploy multiple applications using the same operating system on a single 
+virtual machine or server.
+
+virtualtakes up lots of memory while container takes in MB.
+virtual any os where container shares kernel and works in other os. 
+
+ image vs package
+ image is a package or template used create containers.
+  
+  containers are running instances of imaged that are isolated and have their own environments  
+
+  docker used create an image for application
+  image creates a containers.
+  container is a instance of image.
+
+  docker commands:
+  --------------------
+  docker run nginx(container name)
+  docker ps (list the running container)
+  docker ps -a (list all container running and stopped previous)
+  docker stop name or id(provided)
+  docker rm name(to remove permantely the container name)
+  docker run -d kodekloud/simple-webapp(command used to run in background)
+   docker attach id(to attach in backgroundcontanier) 

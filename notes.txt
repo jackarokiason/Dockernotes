@@ -48,3 +48,5 @@ virtual any os where container shares kernel and works in other os.
   docker rm name(to remove permantely the container name)
   docker run -d kodekloud/simple-webapp(command used to run in background)
    docker attach id(to attach in backgroundcontanier) 
+   docker images(list images)
+   docker rmi used (to remove images)

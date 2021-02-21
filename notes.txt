@@ -50,3 +50,14 @@ virtual any os where container shares kernel and works in other os.
    docker attach id(to attach in backgroundcontanier) 
    docker images(list images)
    docker rmi used (to remove images)
+   docker pull ubuntu(to pull images)
+   docker run -d ubuntu sleep 100(sleep after 100sec -d in background)
+   docker exec (id) cat /etc/"release" (see content of the particular file in conrainer)
+
+   exec command runs or executes a command on a running container
+
+   quiz
+
+   docker version
+   docker ps
+   docker images

@@ -1,3 +1,5 @@
+day-1 19.2.2021
+
 why do we need Docker?
 
 Compatibility/dependency
@@ -38,7 +40,8 @@ virtual any os where container shares kernel and works in other os.
   docker used create an image for application
   image creates a containers.
   container is a instance of image.
-
+-----------------------------------------------------------------------------------------------------------------
+  day-2 20.2.2021
   docker commands:
   --------------------
   docker run nginx(container name)
@@ -56,8 +59,30 @@ virtual any os where container shares kernel and works in other os.
 
    exec command runs or executes a command on a running container
 
-   quiz
+day-3 21.2.2021
+ -----------------------------------------------------------------------------------------  
+   quiz:
 
    docker version
    docker ps
    docker images
+
+   run
+docker run redis:4.0(to see version)
+    docker container does not listen to input
+    so it will output the program without reading the input
+
+   
+    docker run -i name(interactive mode)
+    docker run -it name(t for terminal)
+
+docker should be connect to dockerhost IP,
+portmapping:
+docker run -p 80:5000 applicationname(p for parameter)
+docker run -v /opt/datadir:/var/lib/mysql mysql(to store data externally even if we delete the container)
+docker inspect container name(additional details)
+docker logs container name(to see logs of -d(deatched mode(background) ) )
+
+
+docker run ubuntu cat /etc/*release*(to see the version of the image downloaded automatically)
+docker run ubuntu:17.10 cat /etc/*release*(specfic version)
